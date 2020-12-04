@@ -1,0 +1,35 @@
+{
+  "name": "test-utils",
+  "version": "0.0.1",
+  "description": "",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^3.13.0",
+    "fastify": "^3.9.1",
+    "gts": "^3.0.3",
+    "typescript": "^4.0.3",
+    "@types/node": "^14.11.2"
+  },
+  "scripts": {
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gmvbr/test-utils.git"
+  },
+  "keywords": [],
+  "author": "gmvbr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gmvbr/test-utils/issues"
+  },
+  "homepage": "https://github.com/gmvbr/test-utils#readme"
+}
